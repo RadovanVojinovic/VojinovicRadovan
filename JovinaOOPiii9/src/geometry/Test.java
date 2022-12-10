@@ -17,9 +17,8 @@ public class Test {
 		System.out.println(p.equals(p1));
 		System.out.println(l.equals(l1));
 		
-		/*
-		 Center: (5,6), radius: 6
-		 */
+		Donut d = new Donut(new Point(3,4), 8, 4);
+		System.out.println(d.area());
 		
 	}
 
