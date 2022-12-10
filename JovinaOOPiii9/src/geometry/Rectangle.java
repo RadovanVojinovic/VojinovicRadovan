@@ -33,6 +33,16 @@ public class Rectangle {
 	public String toString() {
 		return "Upper left point: " + upperLeft + ", width: " + width + ", height: " + height;		
 	}
+	@Override
+    public boolean equals(Object objR){
+        if (objR instanceof Rectangle){
+            Rectangle temp = (Rectangle)objR;
+            if(upperLeft.equals(temp.upperLeft) && width == temp.width && height == temp.height){
+                return true;
+            }
+        }
+        return false;
+    }
 	public Point getUpperLeft() {
 		return upperLeft;
 	}

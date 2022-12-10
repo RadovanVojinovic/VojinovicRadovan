@@ -23,6 +23,16 @@ public class Circle {
 	public String toString() {
 		return "Center: "  + center + ", radius: " + r;
 	}
+	@Override
+    public boolean equals(Object objC){
+        if (objC instanceof Circle){
+            Circle temp = (Circle)objC;
+            if(center.equals(temp.center) && r == temp.r){
+                return true;
+            }
+        }
+        return false;
+    }
 	
 	public double circumference() {
 		return 2 * r * Math.PI;
