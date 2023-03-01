@@ -4,18 +4,16 @@ public class Vozilo {
     private String model;
     private int godiste;
     private String tipGoriva;
-    private double potrosnja;
     
     public Vozilo() {
     	
     }
     
-    public Vozilo(String marka, String model, int godiste,String tipGoriva,double prosecnaPotrosnja) {
+    public Vozilo(String marka, String model, int godiste,String tipGoriva) {
         this.marka = marka;
         this.model = model;
         this.godiste = godiste;
         this.tipGoriva = tipGoriva;
-        this.potrosnja = potrosnja;
     }
     
 	public String getMarka() {
@@ -47,15 +45,6 @@ public class Vozilo {
 
 	public void setTipGoriva(String tipGoriva) {
 		this.tipGoriva = tipGoriva;
-	}
-
-    
-	 public double getPotrosnja() {
-		return potrosnja;
-	}
-
-	public void setPotrosnja(double potrosnja) {
-		this.potrosnja = potrosnja;
 	}
 
 	public double potrosnjaGoriva(double predjeniKilometri) {

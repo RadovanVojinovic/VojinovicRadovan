@@ -3,7 +3,7 @@ package potrosnjaGoriva;
 //TODO Auto-generated method stub
 public class Test {
 public static void main(String[] args) {
-Vozilo vozilo1 = new Vozilo("Opel", "Astra", 2004, "Benzin", 8);
+Vozilo vozilo1 = new Vozilo("Opel", "Astra", 2004, "Benzin");
 Vozac vozac1 = new Vozac("Marko Olujic",39,1233);
 
 System.out.println(vozilo1.toString());

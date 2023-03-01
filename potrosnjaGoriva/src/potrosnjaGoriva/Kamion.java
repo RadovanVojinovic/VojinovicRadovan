@@ -1,7 +1,7 @@
 package potrosnjaGoriva;
 public class Kamion extends Vozilo {
     public Kamion(String marka, String model, int godiste,String tipGoriva) {
-        super(marka, model, godiste,tipGoriva,16);
+        super(marka, model, godiste,tipGoriva);
     }
 
     @Override
