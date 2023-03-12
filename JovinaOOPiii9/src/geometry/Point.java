@@ -1,6 +1,6 @@
 package geometry;
 
-public class Point {
+public class Point extends Shape{
 	private int x;
 	private int y;
 	private boolean selected;
@@ -26,6 +26,10 @@ public class Point {
 		double d = Math.sqrt(dX*dX + dY*dY);
 		return d;
 	}
+	public boolean contains(int x,int y) {
+		System.out.println("Uraditi za domaci");
+		return false;
+	}
 	
 	
 	
@@ -43,6 +47,11 @@ public class Point {
 			}
 		}
 		return false;
+	}
+	@Override
+	public void moveTo(int x,int y) {
+		this.x = x;
+		this.y = y;
 	}
 
 	public int getX() {

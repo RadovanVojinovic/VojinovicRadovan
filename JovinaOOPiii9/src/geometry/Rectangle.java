@@ -1,6 +1,6 @@
 package geometry;
 
-public class Rectangle {
+public class Rectangle extends Shape{
 	
 	public Point upperLeft;
 	public int width;
@@ -29,6 +29,11 @@ public class Rectangle {
 	public int area() {
 		return width * height;
 	}
+	public boolean contains(int x,int y) {
+		System.out.println("Uraditi za domaci");
+		return false;
+	}
+	
 	@Override
 	public String toString() {
 		return "Upper left point: " + upperLeft + ", width: " + width + ", height: " + height;		

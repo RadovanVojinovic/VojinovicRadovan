@@ -1,6 +1,6 @@
 package geometry;
 
-public class Line {
+public class Line extends Shape{
 	private Point startPoint;
 	private Point endPoint;
 	private boolean selected;
@@ -19,6 +19,11 @@ public class Line {
 		this.endPoint = endPoint;
 		this.selected = selected;
 	}
+	public boolean contains(int x,int y) {
+		System.out.println("Uraditi za domaci");
+		return false;
+	}
+	
 	@Override
 	public String toString() {
 		return startPoint + "-->" + endPoint;

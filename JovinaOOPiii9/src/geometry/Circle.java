@@ -1,6 +1,6 @@
 package geometry;
 
-public class Circle {
+public class Circle extends Shape{
 	
 	private Point center;
 	private int r;
@@ -19,6 +19,11 @@ public class Circle {
 		this(center, r);
 		this.selected = selected;
 	}
+	public boolean contains(int x,int y) {
+		System.out.println("Uraditi za domaci");
+		return false;
+	}
+	
 	@Override
 	public String toString() {
 		return "Center: "  + center + ", radius: " + r;
